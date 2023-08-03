@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- You can create a CSS file and link it here for styling -->
+</head>
+<body>
+    <!-- Replace "logo.png" with the URL or path to your platform's logo -->
+    <div class="logo">
+        <img src="/images/logo.png" alt="Platform Logo">
+    </div>
+<div class="back">
+    <div class="container">
+        <div class="title">
+          <img src="/images/title.png" alt="Platform name">
+        </div>
+          <form action="" method="POST"> <!-- Replace "login.php" with the backend script to handle login -->
+            <div class="wrapper">
+              <input class="input" name="username" placeholder="Username / Email" type="text">
+              <input class="input" name="password" placeholder="Password" type="password">
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" name="remember_me"> Recordarme
+                </label>
+                <a href="forgot_password" style="color: #ff5252;">Olvidó su contraseña?</a> <!-- Replace "forgot_password.php" with the appropriate link for password recovery -->
+            </div>
+            
+  
+  
+            <button class="input__button__shadow input__button__shadow--variant glow-button" type="submit">Iniciar sesión</button>
+          </form>
+  
+          <p class="or">Inicie sesión con:</p>
+  
+          <div class="social-login">
+              <!-- Replace the "#" in the "href" attribute with the appropriate authentication URLs -->
+              <div class="social-login">
+                <!-- Replace "fa-google" with the appropriate Font Awesome class for the Google icon -->
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=AeDOFXja7CLdeeAn5RQ_LnLECsMz7ljnEjDhYRAOSR3VXMm25ZOpzT-VvipTSG9pndtO7VP48SGxfw&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S906244571%3A1690982068791396"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
+                <!-- Replace "fa-apple" with the appropriate Font Awesome class for the Apple icon -->
+                <a href="#"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></i></a>
+                <!-- Replace "fa-facebook" with the appropriate Font Awesome class for the Facebook icon -->
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <!-- Replace "fa-twitter" with the appropriate Font Awesome class for the Twitter icon -->
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+  
+          <div class="signup">
+              <p>No tienes cuenta? <a href="/registro">Registrate</a></p> <!-- Replace "signup.php" with the appropriate link for user registration -->
+          </div>
+      </div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2023 Potter Streaming Platform. Derechos reservados.</p>
+    </footer>
+</body>
+</html>

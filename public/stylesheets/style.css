@@ -1,0 +1,425 @@
+
+
+.container {
+  position: relative;
+  z-index: 5;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgb(32, 44, 44);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: -5;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/bg.jpg);
+  color: #fff;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-pricing {
+  padding: 20px;
+  max-width: 140px;
+}
+
+.logo img {
+  max-width: 140px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add some space between the inputs if needed */
+.wrapper input {
+  margin-bottom: 30px;
+}
+
+.input {
+  --input-focus: #8bffee;
+  --font-color: #fefefe;
+  --font-color-sub: #7e7e7e;
+  --bg-color: rgba(255, 255, 255, 0.2);
+  --main-color: #fefefe;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+.input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+label {
+  font-size: 17px;
+}
+
+
+.remember-forgot {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Add your desired button styles here */
+.glow-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #07372C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Glow animation on hover */
+.glow-button:hover {
+  animation: glowing 1300ms ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #3C6659;
+  }
+  50% {
+    box-shadow: 0 0 20px #3C6659;
+  }
+  100% {
+    box-shadow: 0 0 5px #3C6659;
+  }
+}
+
+
+.or {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+/* ... Rest of your CSS code ... */
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Add the following styles for the Font Awesome icons */
+.social-login i {
+  font-size: 24px;
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-login i:hover {
+  transform: scale(1.2);
+}
+
+/* ... Rest of your CSS code ... */
+
+
+.signup {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.signup a {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.card {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  width: 250px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #fff
+}
+
+.price {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff
+}
+
+.desc {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+  color: rgba(156, 163, 175, 1);
+}
+
+.lists {
+  margin-bottom: 1.5rem;
+  flex: 1 1 0%;
+  color: rgba(156, 163, 175, 1);
+}
+
+.lists .list {
+  margin-bottom: 0.5rem;
+  display: flex;
+  margin-left: -2rem
+}
+
+.lists .list svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  color: rgba(167, 139, 250, 1);
+}
+
+.action {
+
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: rgba(167, 139, 250, 1);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(17, 24, 39, 1);
+}
+
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery .card{
+  margin-right: 50px;
+}
+
+header {
+  margin: 40px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+#select-plan{
+  font-size: 60px;
+  margin-top: 40px;
+  margin-left: 30%;
+}
+
+.customCheckBoxHolder {
+  margin: 5px;
+  display: flex;
+}
+
+.customCheckBox {
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 8px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 0px;
+  color: rgba(255, 255, 255, 0.7);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: color, background-color, box-shadow;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px;
+  outline: none;
+  justify-content: center;
+  min-width: 55px;
+}
+
+.customCheckBox:hover {
+  background-color: #2c2c2c;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+
+.customCheckBox .inner {
+  font-size: 18px;
+  font-weight: 900;
+  pointer-events: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 300ms;
+  transition-property: transform;
+  transform: translateY(0px);
+}
+
+.customCheckBox:hover .inner {
+  transform: translateY(-2px);
+}
+
+.customCheckBoxWrapper:first-of-type .customCheckBox {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: 0px;
+}
+
+.customCheckBoxWrapper:last-of-type .customCheckBox {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 0px;
+}
+
+.customCheckBoxInput {
+
+  display: none;
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
+  background-color: #2d6737;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.17) 0px 2px 4px 1px;
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox .inner {
+  transform: translateY(-2px);
+}
+
+.customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox:hover {
+  background-color: #34723f;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px -4px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px -1px 1px 0px, rgba(0, 0, 0, 0.15) 0px 3px 6px 2px;
+}
+
+.customCheckBoxWrapper .customCheckBox:hover .inner {
+  transform: translateY(-2px);
+}
+#linknew img{
+  width: 20px;
+}
+
+.InputContainer {
+  height: 35px;
+  width: 325px;
+  margin-left: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  overflow: hidden;
+  padding: 0px 5px 0px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.inputcc {
+  width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(8, 8, 8);
+  font-weight: 600;
+  color: white;
+}
+
+.inputccc {
+  height: 35px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  overflow: hidden;
+  padding: 0px 5px 0px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+.visaCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 25px;
+  background-color: rgb(8, 8, 8);
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  border-radius: 7px;
+}

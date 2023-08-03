@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter - Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- You can create a CSS file and link it here for styling -->
+</head>
+<body>
+    <!-- Replace "logo.png" with the URL or path to your platform's logo -->
+    <div class="logo">
+        <img src="/images/logo.png" alt="Platform Logo">
+    </div>
+
+    <div class="container">
+      <div class="title">
+        <img src="/images/title.png" alt="Platform name">
+      </div>
+        <form action="" method="POST">
+            <div class="wrapper">
+                <input class="input" name="username" placeholder="Username / Email" type="text">
+                <input class="input" name="password" placeholder="Password" type="password">
+              </div>
+        <div class="newtab" style="display: flex;">
+            <h3 style="margin-top: 15px;margin-left: 1.5em;">Pick your plan</h3>
+            <a href="/pricing" id="linknew" style="margin-top: 15px;margin-left: 5px;" target="_blank"><img src="/images/arrow.png" alt="new tab"></a>
+        </div>
+
+          <div class="customCheckBoxHolder" style="margin-left: 1.5em; margin-top: 0px;margin-bottom: 20px;">
+
+            <input class="customCheckBoxInput" id="cCB1" name="radiob" type="radio">
+            <label class="customCheckBoxWrapper" for="cCB1">
+                <div class="customCheckBox">
+                    <div class="inner">Beginner</div>
+                </div>
+            </label>
+        
+            <input class="customCheckBoxInput" id="cCB2" name="radiob" type="radio">
+            <label class="customCheckBoxWrapper" for="cCB2">
+                <div class="customCheckBox">
+                    <div class="inner">Standard</div>
+                </div>
+            </label>
+        
+            <input class="customCheckBoxInput" id="cCB3" name="radiob" type="radio">
+            <label class="customCheckBoxWrapper" for="cCB3">
+                <div class="customCheckBox">
+                    <div class="inner">Elite</div>
+                </div>
+            </label>
+        
+        </div>
+        <label for="InputContainer" style="margin-left: 1.5em;margin-top: 20px;">Card Number</label>
+        <div class="InputContainer">
+            <input placeholder="0000 0000 0000 0000" id="input" class="inputcc" name="text" type="text">
+          <div class="visaCard">
+            <i class="fa-brands fa-cc-mastercard"></i>
+          </div>
+        </div>
+        <div style="display: flex;margin-left: 1.5em;margin-top: 15px;">
+            <div style="display: flex; flex-direction: column;margin-right: 10px;">
+                <label for="holder">Card Holder</label>
+                <input type="text" class="inputccc" placeholder="John Doe" id="holder">
+                
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <label for="cvv">CVV</label>
+                <input type="text" class="inputccc" placeholder="XXX" id="cvv">
+            </div>
+        </div>
+
+        
+        
+        <button class="input__button__shadow input__button__shadow--variant glow-button" type="submit" style="margin-top: 30px;">Register</button>
+        </form>
+
+        <p class="or">Or, Sign up with:</p>
+
+        <div class="social-login">
+            <!-- Replace the "#" in the "href" attribute with the appropriate authentication URLs -->
+            <div class="social-login">
+              <!-- Replace "fa-google" with the appropriate Font Awesome class for the Google icon -->
+              <a href="#"><i class="fa-brands fa-google" style="color: #ffffff;"></i></a>
+              <!-- Replace "fa-apple" with the appropriate Font Awesome class for the Apple icon -->
+              <a href="#"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></i></a>
+              <!-- Replace "fa-facebook" with the appropriate Font Awesome class for the Facebook icon -->
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <!-- Replace "fa-twitter" with the appropriate Font Awesome class for the Twitter icon -->
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="signup">
+            <p>Already have an account? <a href="/login">Sign In</a></p> <!-- Replace "signup.php" with the appropriate link for user registration -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Potter Streaming Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
