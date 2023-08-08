@@ -108,6 +108,11 @@ router.get('/shows/naruto', function(req, res, next) {
   res.render('shows/naruto', { title: 'Express' });
 });
 
+router.get('/shows/mrrobot', function(req, res, next) {
+  if (!req.session.login) { res.redirect('/'); return; }
+  res.render('shows/mrrobot', { title: 'Express' });
+});
+
 router.get('/sports/messi', function(req, res, next) {
   if (!req.session.login) { res.redirect('/'); return; }
   res.render('sports/messi', { title: 'Express' });
@@ -140,7 +145,7 @@ router.get('/logins', function(req, res, next) {
 
 router.get('/logout', function(req, res, next) {
   req.session.destroy();
-  res.redirect('login')
+  res.redirect('/')
 });
 
 router.get('/dashboard', function(req, res, next) {
