@@ -1,28 +1,22 @@
 var express = require('express');
 var path = require('path');
+const session = require('express-session');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-const firebase = require('firebase/app');
-require('firebase/auth');
+var app = express();
 
-// Configura tu información de configuración de Firebase aquí
-const firebaseConfig = {
-  apiKey: "AIzaSyAmT9zVRAh5lhTOEI2uNEx6ZyNiWgRa0wg",
-  authDomain: "borrar-a69cd.firebaseapp.com",
-  projectId: "borrar-a69cd",
-  storageBucket: "borrar-a69cd.appspot.com",
-  messagingSenderId: "362029146172",
-  appId: "1:362029146172:web:79d8b1314cfe15372ea339",
-};
+app.use(session({
+  secret: 'mi_secreto',
+  resave: false,
+  saveUninitialized: false
+}));
 
-// Inicializa Firebase con la configuración
-firebase.initializeApp(firebaseConfig);
 var index = require('./routes/index');
 var users = require('./routes/users');
 
-var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

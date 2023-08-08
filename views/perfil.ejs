@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Potter - Profile</title>
+    <title>Potter - Perfil</title>
     <link rel="stylesheet" href="/stylesheets/profile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,11 +24,11 @@
     <img src="/images/logo.png" alt="logo" class="logo-pricing" />
     <nav>
       <ul>
-        <li><a href="/dashboard">Home</a></li>
-        <li><a href="/movies">Movies</a></li>
-        <li><a href="/shows">TV Shows</a></li>
-        <li><a href="/sports">Sports</a></li>
-        <li><a href="/profile" class="active">Account</a></li>
+        <li><a href="/inicio">Inicio</a></li>
+        <li><a href="/peliculas">Películas</a></li>
+        <li><a href="/series">Series</a></li>
+        <li><a href="/deportes">Deportes</a></li>
+        <li><a href="/perfil" class="active">Cuenta</a></li>
         <!-- Add more navigation items as needed -->
       </ul>
     </nav>
@@ -47,7 +47,7 @@
               d="m1.5 13v1a.5.5 0 0 0 .3379.4731 18.9718 18.9718 0 0 0 6.1621 1.0269 18.9629 18.9629 0 0 0 6.1621-1.0269.5.5 0 0 0 .3379-.4731v-1a6.5083 6.5083 0 0 0 -4.461-6.1676 3.5 3.5 0 1 0 -4.078 0 6.5083 6.5083 0 0 0 -4.461 6.1676zm4-9a2.5 2.5 0 1 1 2.5 2.5 2.5026 2.5026 0 0 1 -2.5-2.5zm2.5 3.5a5.5066 5.5066 0 0 1 5.5 5.5v.6392a18.08 18.08 0 0 1 -11 0v-.6392a5.5066 5.5066 0 0 1 5.5-5.5z"
             ></path>
           </svg>
-          Personal information
+          Información Personal
         </button>
         <button class="value" id="billingbtn">
           <svg id="Line" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@
               d="m16 23c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"
             ></path>
           </svg>
-          Billing
+          Facturación
         </button>
         <button class="value">
           <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@
               d="m109.9 20.63a6.232 6.232 0 0 0 -8.588-.22l-57.463 51.843c-.012.011-.02.024-.031.035s-.023.017-.034.027l-4.721 4.722a1.749 1.749 0 0 0 0 2.475l.341.342-3.16 3.16a8 8 0 0 0 -1.424 1.967 11.382 11.382 0 0 0 -12.055 10.609c-.006.036-.011.074-.015.111a5.763 5.763 0 0 1 -4.928 5.41 1.75 1.75 0 0 0 -.844 3.14c4.844 3.619 9.4 4.915 13.338 4.915a17.14 17.14 0 0 0 11.738-4.545l.182-.167a11.354 11.354 0 0 0 3.348-8.081c0-.225-.02-.445-.032-.667a8.041 8.041 0 0 0 1.962-1.421l3.16-3.161.342.342a1.749 1.749 0 0 0 2.475 0l4.722-4.722c.011-.011.018-.025.029-.036s.023-.018.033-.029l51.844-57.46a6.236 6.236 0 0 0 -.219-8.589zm-70.1 81.311-.122.111c-.808.787-7.667 6.974-17.826 1.221a9.166 9.166 0 0 0 4.36-7.036 1.758 1.758 0 0 0 .036-.273 7.892 7.892 0 0 1 9.122-7.414c.017.005.031.014.048.019a1.717 1.717 0 0 0 .379.055 7.918 7.918 0 0 1 4 13.317zm5.239-10.131c-.093.093-.194.176-.293.26a11.459 11.459 0 0 0 -6.289-6.286c.084-.1.167-.2.261-.3l3.161-3.161 6.321 6.326zm7.214-4.057-9.479-9.479 2.247-2.247 9.479 9.479zm55.267-60.879-50.61 56.092-9.348-9.348 56.092-50.61a2.737 2.737 0 0 1 3.866 3.866z"
             ></path>
           </svg>
-          Appearance
+          Apariencia
         </button>
         <button class="value" id="acc">
           <svg id="svg8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,7 @@
               ></path>
             </g>
           </svg>
-          Accessibility
+          Accesibilidad
         </button>
         <button class="value">
           <a href="/logout" style="color: white; text-decoration: none"
@@ -102,17 +102,17 @@
                 d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"
               />
             </svg>
-            Log Out</a
+            Cerrar sesión</a
           >
         </button>
       </div>
       <div class="info" id="main" style="height: 500px; width: 900px">
         <div class="info-content" id="info-content">
-          <h1>Personal Information</h1>
+          <h1>Información Personal</h1>
           <div class="" style="margin-top: 60px">
             <label for="name">Email</label>
             <input type="text" name="" id="name" value="<%= name %>" disabled />
-            <label for="password" class="right">Password</label>
+            <label for="password" class="right">Contraseña</label>
             <input type="text" id="password" value="xxxxxxxxxxxxxx" disabled />
           </div>
           <br />
@@ -125,12 +125,12 @@
               value="<%= data.radiob %>"
               disabled
             />
-            <label for="password" class="right">Monthly rate</label>
+            <label for="password" class="right">Mensualidad</label>
             <input type="text" id="plan" value="$1.99" disabled />
           </div>
         </div>
         <div class="billing" id="billing" style="display: none">
-          <h1>Billing</h1>
+          <h1>Facturación</h1>
           <div class="billing-content" style="display: flex">
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -252,7 +252,7 @@
                     data.cardNumber.substring(8,12) %> <%-
                     data.cardNumber.substring(12) %>
                   </p>
-                  <p class="valid_thru">VALID THRU</p>
+                  <p class="valid_thru">Fecha Exp</p>
                   <p class="date_8264">1 2 / 2 4</p>
                   <p class="name"><%- data.cardHolder %></p>
                 </div>
@@ -269,14 +269,14 @@
               <div class="content">
                 <div class="title" id="billing-plan"><%- data.radiob %></div>
                 <div class="price" id="pricing"></div>
-                <div class="title" id="due-date">Due date</div>
+                <div class="title" id="due-date">Fecha de corte</div>
                 <div class="price" id="due-date-date">08/09/23</div>
               </div>
             </div>
           </div>
         </div>
         <div class="access" id="access" style="display: none">
-          <h1>Select your language</h1>
+          <h1>Lenguaje</h1>
           <div class="access-content" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
             <button class="flag" style="background-color: transparent;border: none;" >
               <a href="/perfil"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png" alt="Español" style="width: 200px;"></a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potter - Register</title>
+    <title>Potter - Registro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css"> <!-- You can create a CSS file and link it here for styling -->
 </head>
@@ -19,14 +19,63 @@
       </div>
         <form action="" method="POST">
             <div class="wrapper">
-                <input class="input" name="username" placeholder="Username / Email" type="text">
-                <input class="input" name="password" placeholder="Password" type="password">
+                <input class="input" name="username" placeholder="Correo electrónico" type="email" required>
+                <input class="input" name="password" placeholder="Contraseña" type="password" required>
               </div>
- 
-          <button class="input__button__shadow input__button__shadow--variant glow-button" type="submit">Login</button>
+        <div class="newtab" style="display: flex;">
+            <h3 style="margin-top: 15px;margin-left: 1.5em;">Selecciona tu plan</h3>
+            <a href="/pricing" id="linknew" style="margin-top: 15px;margin-left: 5px;" target="_blank"><img src="/images/arrow.png" alt="new tab"></a>
+        </div>
+
+          <div class="customCheckBoxHolder" style="margin-left: 1.5em; margin-top: 0px;margin-bottom: 20px;">
+
+            <input class="customCheckBoxInput" id="cCB1" name="radiob" type="radio" value="Begginner">
+            <label class="customCheckBoxWrapper" for="cCB1">
+                <div class="customCheckBox">
+                    <div class="inner">Beginner</div>
+                </div>
+            </label>
+        
+            <input class="customCheckBoxInput" id="cCB2" name="radiob" type="radio" value="Standard">
+            <label class="customCheckBoxWrapper" for="cCB2">
+                <div class="customCheckBox">
+                    <div class="inner">Standard</div>
+                </div>
+            </label>
+        
+            <input class="customCheckBoxInput" id="cCB3" name="radiob" type="radio" value="Elite">
+            <label class="customCheckBoxWrapper" for="cCB3">
+                <div class="customCheckBox">
+                    <div class="inner">Elite</div>
+                </div>
+            </label>
+        <input type="text" name="plan" id="plan" style="background-color: rgb(32, 44, 44);border: 0px;width: 10px;color:rgb(32, 44, 44) ;" required>
+        </div>
+        <label for="InputContainer" style="margin-left: 1.5em;margin-top: 20px;">Número en la tarjeta</label>
+        <div class="InputContainer">
+            <input placeholder="0000 0000 0000 0000" id="input" class="inputcc" name="cardNumber" type="text" maxlength="16" required>
+          <div class="visaCard">
+            <i class="fa-brands fa-cc-mastercard"></i>
+          </div>
+        </div>
+        <div style="display: flex;margin-left: 1.5em;margin-top: 15px;">
+            <div style="display: flex; flex-direction: column;margin-right: 10px;">
+                <label for="holder">Nombre en la tarjeta</label>
+                <input type="text" class="inputccc" name="cardHolder" placeholder="John Doe" id="holder" required>
+                
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <label for="cvv">CVV</label>
+                <input type="text" class="inputccc" placeholder="XXX" id="cvv" name="cvv" maxlength="3" required>
+            </div>
+        </div>
+
+        
+        
+        <button class="input__button__shadow input__button__shadow--variant glow-button" type="submit" style="margin-top: 30px;">Registrate</button>
         </form>
 
-        <p class="or">Ó, Registrese con:</p>
+        <p class="or">O, registrate con:</p>
 
         <div class="social-login">
             <!-- Replace the "#" in the "href" attribute with the appropriate authentication URLs -->
@@ -43,7 +92,7 @@
         </div>
 
         <div class="signup">
-            <p>Ya tiene cuenta? <a href="/login">Inicie sesión</a></p> <!-- Replace "signup.php" with the appropriate link for user registration -->
+            <p>Ya tienes cuenta? <a href="/login">Inicia sesión</a></p> <!-- Replace "signup.php" with the appropriate link for user registration -->
         </div>
     </div>
 
@@ -52,3 +101,28 @@
     </footer>
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+    let b1 = document.getElementById("cCB1")
+    let b2 = document.getElementById("cCB2")
+    let b3 = document.getElementById("cCB3")
+    let plan = document.getElementById("plan")
+
+function updatePlan(button){
+    $(button).on("click", function(){
+        if(b1.checked == true){
+        plan.value = b1.value
+    } if(b2.checked == true){
+        plan.value = b2.value
+    } if(b3.checked == true){
+        plan.value = b3.value
+    }console.log('PLAN VALUE ', plan.value)
+
+    })
+}
+
+updatePlan("#cCB1")
+updatePlan("#cCB2")
+updatePlan("#cCB3")
+
+</script>

@@ -405,6 +405,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgb(8, 8, 8);
+  color: white;
   overflow: hidden;
   padding: 0px 5px 0px 15px;
   border: 1px solid rgba(255, 255, 255, 0.322);

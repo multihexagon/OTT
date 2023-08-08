@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- You can create a CSS file and link it here for styling -->
+</head>
+<style>
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  background-color: rgb(32, 44, 44);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  font-size: 4em;
+  color: rgb(56, 235, 206);
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: rgb(255, 255, 90);
+  font-size: 2.2em;
+  font-weight: 500;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+
+
+
+</style>
+<body>  
+    <!-- Replace "logo.png" with the URL or path to your platform's logo -->
+    <div class="logo">
+        <img src="/images/logo.png" alt="Platform Logo">
+    </div>
+<div class="back">
+    <div class="container">
+        <div class="title">
+          <img src="/images/title.png" alt="Platform name">
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <button class="Btn" style="width: 110px;"><a href="/login"><div class="sign"><img src="/images/united-kingdom.png" class="imagelng" style="width: 90px;margin-right: 20px;"></div></a>
+              </button>
+            <button class="Btn"><a href="/logins"><div class="sign"><img src="/images/spain.png" class="imagelng" style="width: 90px;"></div></a>
+            </button>
+        </div>
+</div>
+
+
+    <footer>
+        <p>&copy; 2023 Potter Streaming Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
